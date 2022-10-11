@@ -25,8 +25,6 @@ SELECT "BEFORE DELETE ROW OF musics TABLE" AS "LOG";
 SELECT * FROM musics;
 
 
-
-
 SET autocommit=0;
 
 START TRANSACTION;
@@ -49,6 +47,8 @@ ROLLBACK;
 SELECT * FROM musics;
 
 SET autocommit=1;
+
+
 
 /*SELECT "ROLLBACK EXECUTED" AS "LOG";
 
